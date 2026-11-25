@@ -1,0 +1,18 @@
+def cubointeresante(num):
+    i=0
+    original = num
+    while num>0:
+        digito = num%10
+        acumulador = acumulador(digito**3)
+        numerof=num//10
+        if original == num:
+            return 1
+            print("el numero",numerof,"es interesante")
+        else:
+            return 0
+            print("el numero",numerof,"no es interesante")
+
+#principal 
+num=int(input("ingresa el numero: "))
+interesante=cubointeresante(num)
+print(interesante)
